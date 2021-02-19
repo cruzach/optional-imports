@@ -3,6 +3,7 @@ import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
 
 import * as Sentry from "sentry-expo";
+
 Sentry.init({
   dsn:
     "https://762a0e6b564344e6912e41d44ea56ac5@o237685.ingest.sentry.io/1549119",
