@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-
+import * as Updates from "expo-updates";
 import * as Sentry from "sentry-expo";
 
 Sentry.init({
@@ -16,10 +16,11 @@ export default function App() {
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
       <StatusBar style="auto" />
+      <Text>{Updates.manifest.revisionId}</Text>
       <Button
-        title="throw again"
+        title="throw"
         onPress={() => {
-          throw new Error("uh oh again");
+          throw new Error("managed and default release");
         }}
       />
     </View>
