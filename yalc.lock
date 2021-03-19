@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "packages": {
+    "stripe-react-native": {
+      "signature": "862f0825ff2df8aa17097e251959e420",
+      "file": true
+    },
+    "sentry-expo": {
+      "signature": "f8291a1348e675962093565e539ee237",
+      "file": true,
+      "replaced": "^3.1.2"
+    }
+  }
+}

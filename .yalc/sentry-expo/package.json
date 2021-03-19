@@ -1,0 +1,57 @@
+{
+  "name": "sentry-expo",
+  "version": "3.1.2+f8291a13",
+  "description": "Catch your Javascript errors for your production Expo apps!",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": [
+    "build",
+    "upload-sourcemaps.js",
+    "plugin/build",
+    "app.plugin.js"
+  ],
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "test": "expo-module test",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "expo",
+    "sentry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expo/sentry-expo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/expo/sentry-expo/issues"
+  },
+  "jest": {
+    "preset": "expo-module-scripts"
+  },
+  "author": "650 Industries, Inc.",
+  "homepage": "https://docs.expo.io/guides/using-sentry/",
+  "dependencies": {
+    "@expo/config-plugins": "~1.0.13",
+    "@expo/config-types": "^40.0.0-beta.2",
+    "@expo/spawn-async": "^1.2.8",
+    "@sentry/browser": "^6.2.0",
+    "@sentry/integrations": "^6.2.0",
+    "@sentry/react-native": "^2.2.1",
+    "@sentry/types": "^6.2.0",
+    "expo-application": "^2.2.1",
+    "expo-constants": "^9.3.5",
+    "expo-device": "^2.4.0",
+    "expo-updates": "~0.3.5",
+    "mkdirp": "^1.0.3",
+    "rimraf": "^2.6.1"
+  },
+  "resolutions": {
+    "jest-expo-enzyme": "^1.0.4"
+  },
+  "yalcSig": "f8291a1348e675962093565e539ee237"
+}
