@@ -15,28 +15,18 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "anything.cruzan"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "anything.cruzan"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "hooks": {
-      "postPublish": [
-        {
-          "file": "sentry-expo/upload-sourcemaps",
-          "config": {
-            "organization": "charlie-cruzan",
-            "project": "sentrytest",
-            "authToken": "2fd05f18db254968beb765930bbf5030a5c61a9fbd0942828ddfe95ee352d094"
-          }
-        }
-      ]
     }
   }
 }

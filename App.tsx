@@ -1,8 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-import * as something from "stripe-react-native";
-console.log(something);
+import * as Stripe from "stripe-react-native";
 export default function App() {
   return (
     <View style={styles.container}>
